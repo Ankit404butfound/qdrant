@@ -319,6 +319,7 @@ fn configure_validation(builder: Builder) -> Builder {
             "CreateFullSnapshotRequest",
             "ListFullSnapshotsRequest",
         ])
+        .protoc_arg("--experimental_allow_proto3_optional")
 }
 
 fn append_to_file(path: &str, line: &str) {
